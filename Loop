@@ -1,0 +1,22 @@
+using System;
+
+
+class Program
+{
+    public static void Main(String[] args)
+    {
+        String name = "hp";
+
+        String p_name = name;
+        do
+        {
+            Console.WriteLine("Enter your name({0}) enter 1 for default value:", name);
+            p_name = Console.ReadLine();
+        }
+        while (p_name == "");
+        if(p_name  != "1"){
+          name = p_name;
+        }
+        Console.WriteLine("Your bank account name is {0}", name);
+    }
+}
