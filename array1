@@ -1,0 +1,26 @@
+using System;
+
+
+class Program
+{
+    public static void Main(String[] args)
+    {
+        int size = 3;
+        //declaration of variable ,zero assignment hobe
+        int[] roll = new int[size];
+        //asignment of array
+
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write("Enter roll of i = {0}:", i);
+            roll[i] = int.Parse(Console.ReadLine());
+        }
+
+        for (int i = 0; i < size; i++)
+        {
+            Console.WriteLine(roll[i]);
+        }
+
+
+    }
+}
