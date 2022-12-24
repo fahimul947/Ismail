@@ -1,0 +1,37 @@
+using System;
+
+
+class Program
+{
+    public static void Main(String[] args)
+    {
+        int[,] std_info = new int[3, 2];
+        //value store korbo
+        //than read value from the array
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine("Student {0} info:", i);
+            for (int j = 0; j < 2; j++)
+            {
+                if (j == 0)
+                {
+                    Console.Write("Enter roll:");
+                    std_info[i, j] = int.Parse(Console.ReadLine());
+                }
+                else
+                {
+                    Console.Write("Enter marks:");
+                    std_info[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+        }
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine("Student {0} info:", i);
+            Console.WriteLine("Rolls :{0}", std_info[i, 0]);
+            Console.WriteLine("Marks:{0}", std_info[i, 1]);
+        }
+
+    }
+}
